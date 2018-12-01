@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+    {% for subnews in news_obj %}
+        <a href="{% url 'news_detail' subnews.pk %}">{{ subnews.title }}</a>
+    {% endfor %}
+</body>
+</html>
